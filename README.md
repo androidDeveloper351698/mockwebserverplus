@@ -1,4 +1,6 @@
 ### mockwebserver +
+Fork of [mockwebserver +](https://github.com/orhanobut/mockwebserverplus) using
+Anroid-friendly [snakeyaml](https://github.com/DroidsOnRoids/snakeyaml) and okhttp `3.4.2`.
 
 #### Issue
 MockWebServer is a great tool for mocking network requests/responses.
