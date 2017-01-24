@@ -1,3 +1,17 @@
+# Notice
+Custom [mockwebserver +](https://github.com/orhanobut/mockwebserverplus) is no longer needed for Android projects.
+
+It is possible to use original, upstream version on Android. To achieve that replace original snakeyaml with Android-friendly variant:
+
+```groovy
+	androidTestCompile('com.orhanobut:mockwebserverplus:1.0.0') {
+		exclude module: 'snakeyaml'
+	}
+	androidTestCompile 'pl.droidsonroids.yaml:snakeyaml:1.18-android'
+```
+
+This repository is no longer updated.
+
 ### mockwebserver +
 Fork of [mockwebserver +](https://github.com/orhanobut/mockwebserverplus) using
 Anroid-friendly [snakeyaml](https://github.com/DroidsOnRoids/snakeyaml) and okhttp `3.4.2`.
